@@ -1,0 +1,44 @@
+.homePage
+  display: flex
+  height: 100%
+  justify-content: flex-end
+  align-items: flex-end
+.sliderBlock
+  display: flex
+  width: 50%
+  height: 60%
+  position: relative
+  &__title
+    position: absolute
+    font-size: 40px
+    text-transform: uppercase
+    font-weight: 400
+    top: -15%
+    left: 0
+  &__img
+    border: 2px solid #fff
+.react-3d-carousel
+  width: 100%
+  height: 100%
+  &:after
+    content: "\f144"
+    font-family: "Font Awesome 5 Free"
+    display: flex
+    position: absolute
+    font-size: 80px
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    color: lightgray
+    text-shadow: 2px 2px 5px #000
+    opacity: .6
+    cursor: pointer
+    &:hover
+      opacity: 1
+      color: #fff!important
+.react-3d-carousel .slider-container .slider-left div, .react-3d-carousel .slider-container .slider-right div
+  border: none
+  color: lightgray
+  font-size: 30px
+  text-shadow: 2px 2px 5px #000
+  opacity: .6
