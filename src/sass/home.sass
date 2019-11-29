@@ -6,39 +6,54 @@
 .sliderBlock
   display: flex
   width: 50%
-  height: 60%
+  height: 100%
   position: relative
   &__title
     position: absolute
     font-size: 40px
     text-transform: uppercase
     font-weight: 400
-    top: -15%
-    left: 0
+    color: #fff
+    top: 18%
+    left: 18%
+  &__btn
+    position: absolute
+    top: 50%
+    transform: translateY(-80%)
+    z-index: 10
+    border: none
+    background: transparent
+    color: rgba(20,20,20,.6)
+    width: 40px
+    font-size: 54px
+    height: 40px
+    outline: none
+    cursor: pointer
+    transition: .3s ease-in
+    &--next
+      right: 10%
+    &--prew
+      left: 10%
+    &:hover
+      color: #fff
   &__img
     border: 2px solid #fff
-.react-3d-carousel
-  width: 100%
-  height: 100%
-  &:after
-    content: "\f144"
-    font-family: "Font Awesome 5 Free"
-    display: flex
-    position: absolute
-    font-size: 80px
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
-    color: lightgray
-    text-shadow: 2px 2px 5px #000
-    opacity: .6
-    cursor: pointer
-    &:hover
-      opacity: 1
-      color: #fff!important
-.react-3d-carousel .slider-container .slider-left div, .react-3d-carousel .slider-container .slider-right div
-  border: none
-  color: lightgray
-  font-size: 30px
-  text-shadow: 2px 2px 5px #000
-  opacity: .6
+    width: 400px
+  &__link
+    position: relative
+    &:after
+      content: "\f144"
+      font-family: "Font Awesome 5 Free"
+      display: flex
+      position: absolute
+      font-size: 80px
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      color: lightgray
+      text-shadow: 2px 2px 5px #000
+      opacity: .6
+      cursor: pointer
+      &:hover
+        opacity: 1
+        color: #fff!important
